@@ -3,6 +3,33 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+	<bean id="news" class="ie.cit.soft8027.saq3.domain.EditorImpl">
+		<constructor-arg name="speciality" value="News"></constructor-arg>
+		<constructor-arg name="firstname" value="Mary"></constructor-arg>
+		<constructor-arg name="lastname" value="Sheehan"></constructor-arg>
+		<constructor-arg name="emailAddress" value="msheehan@mycit.ie"></constructor-arg>
+	</bean>	
+	
+	<bean id="buisness" class="ie.cit.soft8027.saq3.domain.EditorImpl">
+		<constructor-arg name="speciality" value="Buisness"></constructor-arg>
+		<constructor-arg name="firstname" value="Adam"></constructor-arg>
+		<constructor-arg name="lastname" value="Bean"></constructor-arg>
+		<constructor-arg name="emailAddress" value="abean@mycit.ie"></constructor-arg>
+	</bean>	
+	
+	<bean id="entertainment" class="ie.cit.soft8027.saq3.domain.EditorImpl">
+		<constructor-arg name="speciality" value="Entertainment"></constructor-arg>
+		<constructor-arg name="firstname" value="Charlie"></constructor-arg>
+		<constructor-arg name="lastname" value="Dawson"></constructor-arg>
+		<constructor-arg name="emailAddress" value="cdawson@mycit.ie"></constructor-arg>
+	</bean>	
+	
+	<bean id="sport" class="ie.cit.soft8027.saq3.domain.EditorImpl">
+		<constructor-arg name="speciality" value="Sport"></constructor-arg>
+		<constructor-arg name="firstname" value="Eve"></constructor-arg>
+		<constructor-arg name="lastname" value="Finnegan"></constructor-arg>
+		<constructor-arg name="emailAddress" value="efinnegan@mycit.ie"></constructor-arg>
+	</bean>	
+	
 
 </beans>
