@@ -8,8 +8,7 @@ public class EditorImpl implements Editor {
 	public String firstname;
 	public String lastname;
 	public String emailAddress;
-	
-	
+		
 	public EditorImpl (String speciality, String firstname, String lastname, String emailAddress) {
 		super();
 		this.speciality = speciality;
@@ -43,4 +42,9 @@ public class EditorImpl implements Editor {
 		this.emailAddress = emailAddress;
 	}
 
+	@Override
+	public String toString() {
+		return "EditorImpl [speciality=" + speciality + ", firstname=" + firstname + ", lastname=" + lastname
+				+ ", emailAddress=" + emailAddress + "]";
+	}
 }

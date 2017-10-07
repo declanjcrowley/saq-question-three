@@ -30,6 +30,13 @@
 		<constructor-arg name="lastname" value="Finnegan"></constructor-arg>
 		<constructor-arg name="emailAddress" value="efinnegan@mycit.ie"></constructor-arg>
 	</bean>	
-	
 
+	<bean id="npone" class="ie.cit.soft8027.saq3.domain.Newspaper">	
+	    <property name = "editorList">
+            <list>
+                <value>"INDIA"</value>
+                <value>Pakistan</value>
+            </list>
+        </property>
+    </bean>
 </beans>
