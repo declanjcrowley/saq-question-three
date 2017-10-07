@@ -32,10 +32,14 @@
 	</bean>	
 
 	<bean id="npone" class="ie.cit.soft8027.saq3.domain.Newspaper">	
+	    
+	    <property name = "title" value="The CIT Times"> </property>
 	    <property name = "editorList">
             <list>
-                <value>"INDIA"</value>
-                <value>Pakistan</value>
+                <ref bean = "news"/>
+                <ref bean = "entertainment"/>
+                <ref bean = "buisness"/>
+                <ref bean = "sport"/>                
             </list>
         </property>
     </bean>

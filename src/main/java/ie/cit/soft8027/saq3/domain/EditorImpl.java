@@ -44,7 +44,7 @@ public class EditorImpl implements Editor {
 
 	@Override
 	public String toString() {
-		return "EditorImpl [speciality=" + speciality + ", firstname=" + firstname + ", lastname=" + lastname
+		return "Editor [speciality=" + speciality + ", firstname=" + firstname + ", lastname=" + lastname
 				+ ", emailAddress=" + emailAddress + "]";
 	}
 }

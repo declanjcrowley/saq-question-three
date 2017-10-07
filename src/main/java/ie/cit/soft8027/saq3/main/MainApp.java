@@ -11,8 +11,6 @@ public class MainApp {
 
 	public static void main (String args[]){
 		
-		// context=new ClassPathXmlApplicationContext("configuration.xml");
-		// autoWirecontext=new ClassPathXmlApplicationContext("autowireconfiguration.xml");
 		context = new ClassPathXmlApplicationContext("configuration.xml");
 		
 		Newspaper npone = (Newspaper) context.getBean("npone");

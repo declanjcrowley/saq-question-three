@@ -8,11 +8,14 @@ public class Newspaper {
 	
 	private String title;
 	
-	private List<String> editorList;
+	private List<EditorImpl> editorList;
 
 	@Override
 	public String toString() {
-		return "Newspaper [title=" + title + ", editorList=" + editorList + "]";
+		String out = title + "\n";
+		for(int i=0; i<editorList.size(); i++)
+		    out += editorList.get(i).toString() + "\n";
+		return out;
 	}
 	
 	public String getTitle() {
@@ -21,10 +24,10 @@ public class Newspaper {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public List<String> getEditorList() {
+	public List<EditorImpl> getEditorList() {
 		return editorList;
 	}
-	public void setEditorList(List<String> editorList) {
+	public void setEditorList(List<EditorImpl> editorList) {
 		this.editorList = editorList;
 	}
 
